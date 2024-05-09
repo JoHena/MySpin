@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: creepy;
+    src: url('/src/static/fonts/Weird-qoZV.ttf');
+}
+
+body {
+    background-color:#010204;
+}
+
+main {
+    height: 100vh;
+    background:
+    linear-gradient(to bottom, hsla(0, 0%, 0%, 0.541), #010204),
+    url(/src/assets/nun.jpg);
+    background-size: cover;
+}
+
+/* Album */
+.album-name {
+    font-family: creepy;
+}
+
+.album-release {
+    width: fit-content;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: scale(-1, -1);
+}
+
+.box-img {
+    aspect-ratio: 1 / 1; 
+    border-width: 1px; 
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); 
+    width: 460px;
+    border-color: #000000a8;
+}
+
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 100%);
+    border: .025em solid black;
+    border-radius: 10px;
+}
